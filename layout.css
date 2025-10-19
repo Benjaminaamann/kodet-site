@@ -413,14 +413,3 @@ footer .container {
     grid-template-columns: 1fr;
   }
 }
-
-.training-img img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  background-color: white !important;
-  opacity: 1 !important;
-  position: static !important;
-  display: block !important;
-  filter: none !important;
-}
