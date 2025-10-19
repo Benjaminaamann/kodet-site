@@ -1,0 +1,698 @@
+/* Generelle styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Knapper */
+.btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.9em;
+}
+
+/* Placeholder for billeder */
+.placeholder-img {
+  background-color: #ddd;
+  width: 100%;
+  height: 200px;
+}
+
+.placeholder-img.large {
+  height: 300px;
+}
+
+/* Header styles */
+header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+
+.logo h1 {
+  color: #4caf50;
+  font-size: 1.8em;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #4caf50;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4caf50;
+}
+
+/* Hero sektion */
+.hero {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: white;
+  color: #4caf50;
+}
+
+/* Fremhævede sektioner */
+.featured {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  font-size: 3em;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.feature-box p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Ugens Budgettip */
+.weekly-tip {
+  padding: 60px 0;
+  background-color: #f0f8f0;
+}
+
+.weekly-tip h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.tip-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tip-icon {
+  font-size: 3em;
+  color: #4caf50;
+  margin-right: 30px;
+}
+
+.tip-text h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.tip-text p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.read-more {
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Studievenlig Madplan */
+.meal-plan {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.meal-plan h2,
+.did-you-know h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+.day-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.day-card h3 {
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+.day-card p {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+
+.day-card.highlight {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-card.highlight h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.full-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.full-link .btn-small {
+  background-color: white;
+  color: #4caf50;
+  margin-top: 15px;
+  display: inline-block;
+}
+.madplan-details {
+  margin: 0;
+  padding: 0;
+}
+
+.madplan-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.madplan-summary::-webkit-details-marker {
+  display: none;
+}
+
+.resten-af-madplan {
+  margin-top: 20px;
+}
+
+.day-card.highlight {
+  cursor: pointer;
+}
+/* Vidste du? */
+.did-you-know {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.fact-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.fact-icon {
+  font-size: 2.5em;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+/* Sidetitel (for undersider) */
+.page-title {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page-title h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 1.2em;
+}
+
+/* Opskrifter */
+.recipes-section {
+  padding: 40px 20px;
+}
+
+.recipe-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+/* Opskriftsbilleder */
+.recipe-img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.recipe-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+.recipe-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.recipe-content p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.recipe-meta {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f1f1f1;
+}
+
+.pagination a.next {
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #4caf50;
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #888;
+}
+/* Træningssiden styling - specifikt for training-page klassen */
+
+/*header*/
+.training-page .logo h1 a {
+  color: black; /* Ændrer farven til sort */
+}
+
+/* Træningssektionen */
+.training-page .training-section {
+  padding: 60px 0;
+}
+
+/* Kategorifiltre styling */
+.training-page .category-btn {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  padding: 10px 25px;
+  margin: 0 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+/* Træningskort styling */
+.training-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.training-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  background-color: white !important;
+  opacity: 1 !important;
+  position: static !important;
+  display: block !important;
+  filter: none !important;
+}
+
+.training-page .training-img {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.training-page .placeholder-img {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: bold;
+}
+
+.training-page .training-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #30ac32;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.training-page .training-content {
+  padding: 20px;
+}
+
+.training-page .training-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #222;
+}
+
+.training-page .training-content p {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Knapper */
+.training-page .btn-small {
+  display: inline-block;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+/* Farver - specifikt for træningssiden */
+.training-page .page-title {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.training-page .page-title h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.training-page .page-title p {
+  font-size: 1.2em;
+  color: #090000;
+}
+
+/* Baggrundsfarver for træningssiden */
+.training-page,
+.training-page header,
+.training-page .page-title,
+.training-page .training-section {
+  background-color: rgba(241, 237, 237, 0.837);
+}
+
+/* Fjern skygger på træningssiden */
+.training-page header,
+.training-page .page-title {
+  box-shadow: none;
+}
+
+/* Styling for Budgettips siden */
+
+/*header*/
+.budgettips-page .logo h1 a {
+  color: black; /* Ændrer farven til sort */
+}
+
+.budgettips-page header {
+  background-color: rgba(241, 237, 237, 0.837);
+}
+
+/* Grundlæggende styling */
+.budgettips-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: rgba(241, 237, 237, 0.837);
+}
+
+/* Ensartet baggrundsfarve */
+.budgettips-page .page-title,
+.budgettips-page .category-section,
+.budgettips-page .tip-section,
+.budgettips-page .meal-prep-section,
+.budgettips-page .home-training-section {
+  background-color: rgba(241, 237, 237, 0.837);
+}
+
+/* Sidetitel styling */
+.budgettips-page .page-title {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.budgettips-page .page-title h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.budgettips-page .page-title p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Kategoriknapper styling */
+.budgettips-page .category-btn {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  border: 1px solid #333;
+  padding: 12px 25px;
+  margin: 0 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.budgettips-page .category-btn:hover {
+  background-color: #333;
+}
+
+/* Sektioner styling */
+.budgettips-page .tip-section,
+.budgettips-page .meal-prep-section,
+.budgettips-page .home-training-section {
+  padding: 20px 0;
+}
+
+/* Tekstindhold styling */
+.budgettips-page .text-column h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.budgettips-page .text-column p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Billedpladsholdere styling */
+.budgettips-page .placeholder-img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: bold;
+}
+
+.budgettips-page .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+}
+.budgettips-page .placeholder-img.large {
+  min-height: 350px;
+}

@@ -1,0 +1,426 @@
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+/* Fremhævede sektioner layout */
+.featured .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Meal Plan Grid */
+.meal-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Facts Container */
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Filtrering layout */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filter-group {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  flex: 1 0 200px;
+}
+
+.filter-button {
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+/* Opskrifter grid layout */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.recipe-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Pagination layout */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer layout */
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+}
+
+/* Responsivt design */
+@media (max-width: 900px) {
+  .featured .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .container {
+    -columns: repeat(2, 1fr);
+  }
+
+  .meal-plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recipes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tip-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tip-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured .container {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-plan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facts-container {
+    grid-template-columns: 1fr;
+  }
+
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: right;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Træning grid layout */
+
+/* Header layout */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto; /* Skubber logo til venstre */
+}
+
+nav {
+  margin-left: auto; /* Skubber navigation til højre */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+/* Kategorifiltre layout */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Træningskort grid layout */
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Responsivt design for træningssiden */
+@media (max-width: 900px) {
+  .training-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-btn {
+    width: 80%;
+    margin: 5px 0;
+  }
+}
+
+/*budgettips*/
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header layout */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+/* Kategoriknapper layout */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* To-kolonne layout */
+.two-column {
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.text-column {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.image-column {
+  flex: 1;
+}
+
+/* Billedgitter */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Footer layout */
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+}
+
+/* Responsivt design */
+@media (max-width: 900px) {
+  .two-column {
+    flex-direction: column;
+  }
+
+  .text-column {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-btn {
+    width: 80%;
+    margin: 5px 0;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.training-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  background-color: white !important;
+  opacity: 1 !important;
+  position: static !important;
+  display: block !important;
+  filter: none !important;
+}
